@@ -4,5 +4,5 @@ Description=Power off the computer
 [Service]
 Type=oneshot
 RemainAfterExit=yes
-ExecStartPre=-/sbin/zenity --info --title "Bedtime" --text "You have 2 minutes to save and quit!" --width 300
-ExecStart=shutdown -h 2
+#ExecStartPre=-/sbin/zenity --info --title "Bedtime" --text "You have 2 minutes to save and quit!" --width 300
+ExecStart=shutdown -h now
