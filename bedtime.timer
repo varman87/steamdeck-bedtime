@@ -1,0 +1,10 @@
+[Unit]
+Description=Poweroff at bedtime
+
+[Timer]
+OnCalendar=*-*-* 20..23:*:00
+OnCalendar=*-*-* 00..08:*:00
+
+
+[Install]
+WantedBy=timers.target
