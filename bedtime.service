@@ -5,6 +5,6 @@ Description=Power off the computer
 Type=oneshot
 Environment=SUDO_ASKPASS="/home/deck/.config/systemd/user/asksudo.sh"
 #RemainAfterExit=no
-#ExecStartPre=-/sbin/zenity --info --title "Bedtime" --text "You have 2 minutes to save and quit!" --width 300
+#ExecStartPre=-/sbin/zenity --info --title "Bedtime" --text "You have 2 minutes to save and quit!" --width 300  ### Doesn't work.
 ExecStart=shutdown -h now
 ExecStart=/usr/bin/sudo -A /usr/lib/systemd/systemd-sleep suspend
