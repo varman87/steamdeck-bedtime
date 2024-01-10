@@ -4,7 +4,7 @@ Description=Power off the computer
 [Service]
 Type=oneshot
 Environment=SUDO_ASKPASS="/home/deck/.config/systemd/user/asksudo.sh"
-RemainAfterExit=yes
+#RemainAfterExit=no
 #ExecStartPre=-/sbin/zenity --info --title "Bedtime" --text "You have 2 minutes to save and quit!" --width 300
 ExecStart=shutdown -h now
 ExecStart=/usr/bin/sudo -A /usr/lib/systemd/systemd-sleep suspend
